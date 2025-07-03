@@ -5,27 +5,17 @@ Test Framework: Playwright with TypeScriptTested Site: https://www.rightmove.co.
 
 Setup Instructions
 
-Install dependencies:
+Install dependencies: npm install
 
-npm install
+Install Playwright browsers: npx playwright install
 
-Install Playwright browsers:
+Run All Tests: npx playwright test
 
-npx playwright install
+Run Specific Test File: npx playwright test specs/propertySearch.spec.ts
 
-Run All Tests:
+Open Playwright Test Report: npx playwright show-report
 
-npx playwright test
-
-Run Specific Test File:
-
-npx playwright test specs/propertySearch.spec.ts
-
-Open Playwright Test Report:
-
-npx playwright show-report
-
-Debug in Inspector Mode (Optional):
+Debug in Inspector Mode (Optional): npx playwright test --debug
 
 Included Test Scenarios
 
@@ -41,11 +31,7 @@ Handle cookie banner automatically if shown
 
 Browser Support
 
-Configured for:
-
-Chromium (Desktop Chrome)
-
-Firefox
+Configured for: Chromium (Desktop Chrome), Firefox
 
 Note: WebKit (Safari) is excluded due to known compatibility issues with Rightmove UI.
 
